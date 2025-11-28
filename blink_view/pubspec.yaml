@@ -1,6 +1,6 @@
 name: blink_view
 description: "Implement the transparency flickering animation effect for the sub-components"
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/wjneng
 repository: https://github.com/wjneng/blink_view
 
