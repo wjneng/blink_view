@@ -1,17 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 
-/// 闪烁组件
-///
-/// 使用示例：
-/// ```dart
-/// BlinkView(
-///   child: _customView(),
-///   interval: Duration(milliseconds: 500),
-///   minOpacity: 0.2,
-///   maxOpacity: 1.0,
-/// )
-/// ```
 class BlinkView extends StatefulWidget {
   /// 子组件
   final Widget child;
@@ -125,8 +114,9 @@ class _BlinkViewState extends State<BlinkView>
       animation: _animation,
       builder: (context, child) {
         return Opacity(
-            opacity: widget.enabled ? _animation.value : 1.0,
-            child: widget.child);
+          opacity: widget.enabled ? _animation.value : 1.0,
+          child: widget.child,
+        );
       },
     );
   }
